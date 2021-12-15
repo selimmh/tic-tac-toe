@@ -26,6 +26,7 @@
     width: var(--cell-size);
     height: var(--cell-size);
     border: 1px solid black;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,4 +144,9 @@
   
   .msg-win.show {
     display: flex;
+  }
+
+  .dark-mode {
+      background-color: black;
+      color: white;
   }
