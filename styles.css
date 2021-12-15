@@ -19,7 +19,7 @@
     align-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(3, auto)
+    grid-template-columns: repeat(3, auto);
   }
   
   .cell {
@@ -84,6 +84,7 @@
   .cell.x::before,
   .board.x .cell:not(.x):not(.circle):hover::before {
     transform: rotate(45deg);
+    
   }
   
   .cell.x::after,
