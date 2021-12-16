@@ -129,6 +129,7 @@
     height: calc(var(--mark-size) * .7);
     background-color: var(--light-color);
   }
+
   
   .msg-win {
     display: none;
@@ -195,13 +196,20 @@
     padding-bottom: 2rem;
   }
 
-  .dark-mode {
+  .dark-mode,
+  .reset-btn {
     font-size: 1.25rem;
     background-color: var(--light-color);
     color: var(--dark-color);
     border: 2px solid var(--dark-color);
     padding: .25em .5em;
     border-radius: .75rem;
+    cursor: pointer;
+  }
+
+  .dark-mode:hover,
+  .reset-btn:hover {
+    opacity: 80%;
   }
 
   .dark-mode-toggler {

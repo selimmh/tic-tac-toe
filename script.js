@@ -16,9 +16,11 @@ const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
 const winMsgElement = document.getElementById('winMsg')
 const restartButton = document.getElementById('restartButton')
+const resetButton = document.getElementById('resetButton')
 const darkmodeButton = document.getElementById('darkMode')
 const winMsgTextElement = document.querySelector('[data-msg-win-text]')
-const darkModeTextElement = document.querySelector('[data-dark-mode]')
+var scoreX = document.getElementById('scoreX')
+var scoreO = document.getElementById('scoreO')
 let circleTurn
 
 
@@ -26,6 +28,7 @@ let circleTurn
 restartGame()
 restartButton.addEventListener('click', restartGame)
 darkmodeButton.addEventListener('click', darkMode)
+resetButton.addEventListener('click', resetScores)
 
 
 // FUNCTIONS
@@ -59,13 +62,20 @@ function handleClick(e) {
   }
 }
 
-// ends game
+
 function endGame(draw) {
   if (draw) {
-    winMsgTextElement.innerText = 'Draw!'
-  } else {
-    winMsgTextElement.innerText = `${circleTurn ? "o" : "x"} win!`
+    winMsgTextElement.innerText = 'Draw ❌'
+  } 
+  else if (circleTurn){
+    winMsgTextElement.innerText = "O wins 🎉"
+    scoreO.innerText++
   }
+  else if (!circleTurn){
+    winMsgTextElement.innerText = "X wins 🎉"
+    scoreX.innerText++
+  }
+
   winMsgElement.classList.add('show')
 }
 
@@ -108,6 +118,19 @@ function checkWin(currentClass) {
 
 // dark mode
 function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode-toggler");
+    var element = document.body
+    element.classList.toggle("dark-mode-toggler")
+    if(darkmodeButton.innerText === "🌕 Light Mode") {
+      darkmodeButton.innerText = "🌑 Dark Mode";
+    }
+    else {
+      darkmodeButton.innerText = "🌕 Light Mode"
+    }
+  } 
+
+  //score table
+
+  function resetScores() {
+    scoreO.innerText = 0
+    scoreX.innerText = 0
   }
