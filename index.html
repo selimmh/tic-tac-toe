@@ -8,26 +8,44 @@
   <script src="script.js" defer></script>
   <title>Tic Tac Toe</title>
 </head>
-<body class="dark-mode">
+<body class="dark-mode-toggler">
 
-  <div class="board" id="board">
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
+  <div class="playground">
+
+    <div class="board" id="board">
+
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+
+    </div>
+
+    <div class="score-table">
+
+      <div class="player-x">Player X</div>
+      <div class="player-o">Player O</div>
+
+      <div class="score-count-x">0</div>
+      <div class="score-count-o">0</div>
+
+    </div>
+
+    <button id="darkMode" class="dark-mode" data-dark-mode>🌑 Dark Mode</button>
+
+    <div class="msg-win" id="winMsg">
+
+      <div data-msg-win-text></div>
+      <button id="restartButton">Restart</button>
+
+    </div>
+
   </div>
-
-  <div class="msg-win show" id="winMsg">
-    <div data-msg-win-text></div>
-    <button id="restartButton">Restart</button>
-  </div>
-
-  <button onclick="myFunction()">Toggle dark mode</button>
 
 </body>
 </html>

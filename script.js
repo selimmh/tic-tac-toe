@@ -16,13 +16,16 @@ const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
 const winMsgElement = document.getElementById('winMsg')
 const restartButton = document.getElementById('restartButton')
+const darkmodeButton = document.getElementById('darkMode')
 const winMsgTextElement = document.querySelector('[data-msg-win-text]')
+const darkModeTextElement = document.querySelector('[data-dark-mode]')
 let circleTurn
 
 
 // main calls
 restartGame()
 restartButton.addEventListener('click', restartGame)
+darkmodeButton.addEventListener('click', darkMode)
 
 
 // FUNCTIONS
@@ -61,7 +64,7 @@ function endGame(draw) {
   if (draw) {
     winMsgTextElement.innerText = 'Draw!'
   } else {
-    winMsgTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
+    winMsgTextElement.innerText = `${circleTurn ? "o" : "x"} win!`
   }
   winMsgElement.classList.add('show')
 }
@@ -104,7 +107,7 @@ function checkWin(currentClass) {
 }
 
 // dark mode
-function myFunction() {
+function darkMode() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("dark-mode-toggler");
   }
