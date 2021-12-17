@@ -3,7 +3,7 @@
 
 <!-- About -->
 ### About The Project
-Mini Tic Tac Toe game using web tools. Try playing yourself [Here](#)
+Mini Tic Tac Toe game using web tools. Try playing yourself [Here](https://selimmh.github.io/tic-tac-toe/)
 #
 
 ### Preview
