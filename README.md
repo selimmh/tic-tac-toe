@@ -1,30 +1,29 @@
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
+<!-- Title -->
+# Welcome to Tic Tac Toe
 
-  <a href="https://github.com/selimmh/tic-tac-toe">
-    <img src="src/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Tic Tac Toe</h3>
-</div>
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-![This is a gif](src/game.gif)
-![This is a gif](src/theme.gif)
-![This is a gif](src/reset.gif)
-
+<!-- About -->
+### About The Project
+Mini Tic Tac Toe game using web tools. Try playing yourself [Here](#)
 #
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `@selimmh`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+### Preview
+![Preview 1](src/game.gif)
+![Preview 2](src/theme.gif)
+![Preview 3](src/reset.gif)
+#
 
+### Author Info
+Hi 👋  
+I am *Selim*
+
+My website - [www.selimm.me](https://selimmh.me)  
+Twitter - [@selimmh0](https://twitter.com/selimmh0)  
+LinkedIn - [@selimmh](https://www.linkedin.com/in/selimmh/)  
+E-mail - [[@selim.mht@gmail.com](https://mail.google.com/)
 #
 
 ### Built With
-
 * HTML
 * CSS
 * VanillaJS
+#
