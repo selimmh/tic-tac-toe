@@ -13,6 +13,8 @@
   body {
     background-color: var(--light-color);
     font-family: var(--primary-font);
+    user-select: none;
+    overflow: hidden;
   }
   
   .playground {
